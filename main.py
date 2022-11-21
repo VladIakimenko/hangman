@@ -30,21 +30,21 @@ def main(words):
 
     while True:
         cls()
-        print(f'{" " * ((101 - len(display_word)) // 2)}'
+        print(f'{" " * ((99 - len(display_word)) // 2)}'
               f'{display_word}')
         show_hangman(stage)
 
         if not game_over:
             if display_word.replace(' ', '') == word:
-                print(f'{" " * ((101 - 7) // 2)}you win')
+                print(f'{" " * ((99 - 7) // 2)}you win')
                 break
-            print(f'{" " * ((101 - len(missing_letters) - 17) // 2)}'
+            print(f'{" " * ((99 - len(missing_letters) - 17) // 2)}'
                   f'missing letters: {missing_letters}')
-            letter = input(f'{" " * ((101 - 16) // 2)}'
+            letter = input(f'{" " * ((99 - 16) // 2)}'
                            f'open letter ... ').strip().lower()
             letter = letter[0] if len(letter) > 1 else letter
         else:
-            print(f'{" " * ((101 - 9) // 2)}game over')
+            print(f'{" " * ((99 - 9) // 2)}game over')
             break
 
         if letter in word:
@@ -63,7 +63,7 @@ def main(words):
 
 
 # entry
-os.system('mode 102,40')
+os.system('mode 99,35')
 
 words_list = read_words('words_list.txt')
 

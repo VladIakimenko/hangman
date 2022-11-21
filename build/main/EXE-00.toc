@@ -2,7 +2,7 @@
  True,
  False,
  False,
- ['D:\\CODE\\Проекты\\Hangman\\icon.ico'],
+ ['D:\\CODE\\Проекты\\Hangman\\hangman.ico'],
  None,
  False,
  False,
@@ -66,7 +66,7 @@
  [],
  False,
  False,
- 1669020327,
+ 1669032089,
  [('run.exe',
    'C:\\Users\\778\\AppData\\Roaming\\Python\\Python311\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
